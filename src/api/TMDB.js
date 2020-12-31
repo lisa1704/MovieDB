@@ -5,7 +5,8 @@ const TMDB= axios.create({
 });
 
 const getMoviesByTerm=(SearchTerm,setMovies)=>{
-    TMDB.get('search/movie',{
+    //const URLStr="/search/movie?api_key=7f8045ecf5aa05993377afc5969b999c&query="+SearchTerm;
+    TMDB.get('search/movie',{ //URLStr
         params:{
             api_key:"7f8045ecf5aa05993377afc5969b999c",
             query: SearchTerm,
