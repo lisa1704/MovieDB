@@ -4,7 +4,7 @@ const Pagination=(props)=>{
     const page_links=[];
     for (let i=1;i<props.totalPages;i++){
         let isActive;
-        if(props.currentPage==i){
+        if(props.currentPage===i){
             isActive="active"
         }
         else{
